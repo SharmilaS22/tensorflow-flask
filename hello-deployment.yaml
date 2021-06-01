@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+
+kind: Deployment
+
+metadata:
+  name: flask-deployment
+  labels:
+    app: flask-deployment
+
+spec:
+  replicas: 4
+  selector:
+    matchLabels:
+      app: flask-pod
+
+  template:
+    metadata:
+      name: flask-pod
+      labels:
+        app: flask-pod
+
+    spec:
+      containers:
+        - name: flask-container
+          image: flask-app-test
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 5000
+
