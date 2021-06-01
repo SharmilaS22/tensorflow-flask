@@ -1,0 +1,6 @@
+Flask
+tensorflow
+keras
+re
+nltk
+nltk.corpus
