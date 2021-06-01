@@ -17,10 +17,5 @@ python app.py
 
 - Architecture
 
-/----------------------------------------------\
-|                                               |
-|  index.html -> app.py(Flask)  -> display.html |
-|                  |                            |
-|                model                          |
-|                                               |
-\----------------------------------------------/
+  index.html -> app.py(Flask)  -> model -> app.py -> display.html
+ 
