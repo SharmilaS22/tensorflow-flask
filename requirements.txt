@@ -2,4 +2,3 @@ Flask
 tensorflow
 keras
 nltk
-nltk.corpus
